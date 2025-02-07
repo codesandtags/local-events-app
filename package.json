@@ -8,16 +8,16 @@
     "start": "next start",
     "lint": "next lint",
     "db:push": "drizzle-kit push:sqlite --config ./drizzle.config.ts",
-    "db:studio": "drizzle-kit studio",
+    "db:studio": "drizzle-kit studio --verbose --config ./drizzle.config.ts",
     "db:seed": "tsx seed.ts"
   },
   "dependencies": {
-    "@libsql/client": "^0.6.0",
+    "@libsql/client": "^0.14.0",
     "@nextui-org/react": "^2.3.6",
     "@scaleway/random-name": "^5.1.0",
     "bcrypt": "^5.1.1",
-    "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.30.10",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.2",
     "framer-motion": "^11.1.9",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.378.0",
@@ -34,12 +34,12 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "drizzle-kit": "^0.20.18",
+    "drizzle-kit": "^0.30.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "tsx": "^4.9.3",
+    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }
