@@ -3,7 +3,7 @@
 import Shell from '@/components/Shell'
 import { usePathname } from 'next/navigation'
 
-const Dashboard = ({ children, events, rsvps, notifications }) => {
+const Dashboard = ({ children, events, rsvps }) => {
   const path = usePathname()
 
   return (
@@ -15,7 +15,6 @@ const Dashboard = ({ children, events, rsvps, notifications }) => {
             <div className="border-b border-default-50 w-full h-1/2">
               {events}
             </div>
-            <div>{notifications}</div>
             <div className="w-full h-1/2">{children}</div>
           </div>
         </div>
