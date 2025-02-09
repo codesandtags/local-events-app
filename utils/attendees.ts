@@ -27,7 +27,7 @@ export const getAttendeesCountForDashboard = memoize(
   },
   {
     persist: true,
-    revalidateTags: ['dashboard:attendees'],
+    revalidateTags: () => ['dashboard:attendees'],
     log: ['datacache', 'verbose', 'dedupe'],
     logid: 'dashboard:attendees',
   }
